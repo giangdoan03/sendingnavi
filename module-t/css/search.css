@@ -1,0 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#banner.search_page img {
+    height: 65.75vh;
+}
+#banner.search_page .box_filter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#banner.search_page .box_filter .box_filter__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	font-size:42px;
+}
+#banner.search_page .container {
+    top: 79px;
+}
+#banner.search_page .container .box_filter__title svg {
+    left: 0;
+}
+@media(max-width:1024px){
+	#banner.search_page img {
+    height: auto;
+	max-height:500px;
+}
+	#banner.search_page .container{
+		top:50%;
+	}
+	#banner.search_page img {
+    height: 500px;
+}
+}
+@media(max-width:768px){
+	main:has(#banner.search_page) .breacrumb{
+		display:none;
+	}
+    #banner.search_page .container {
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    top: 50%;
+}
+    #banner.search_page img {
+    height: auto;
+}
+#banner.search_page .box_filter .box_filter__title svg {
+    display: none;
+}
+
+#banner.search_page .box_filter .box_filter__title {
+    text-align: center;
+	font-size:25px;
+}
+}

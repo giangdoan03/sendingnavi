@@ -1,0 +1,291 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#about_page {
+  padding-bottom: 80px;
+  padding-top: 62px;
+}
+#about_page .block_items,
+#about_page .about_specs {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#about_page .about_specs {
+  margin-bottom: 82px;
+}
+#about_page .block_item .block_title {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 1;
+  border-bottom: solid 4px #0c2447;
+  margin-bottom: 64px;
+}
+
+#about_page .block_item .block_title:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  max-width: 120px;
+  width: 100%;
+  height: 4px;
+  background: #3dce97;
+  content: "";
+}
+
+#about_page .block_item .block_content {
+  margin-bottom: 78px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#about_page .block_item:last-child .block_content {
+  margin-bottom: 0;
+}
+#about_page .block_items {
+  margin-bottom: 80px;
+}
+#about_page .block_item .block_content p:not(:last-child) {
+  margin-bottom: 20px;
+}
+#about_page .block_item .block_content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+#about_page .block_item .block_content > div ul li {
+  margin-bottom: 21px;
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+  margin-right: -10px;
+}
+#about_page .block_item .block_content > div ul li:last-child {
+  margin-bottom: 0;
+}
+#about_page .block_item .block_content > div ul li:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #0c2447;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+}
+#about_page .block_item .block_content > div ul {
+  margin-top: 33px;
+  padding-left: 7px;
+}
+#about_page .block_item .block_content > div ul li span {
+  display: block;
+  margin-top: 19.5px;
+  margin-left: 5px;
+}
+#about_page .block_item .block_content > div ul li span:last-child {
+  top: 2px;
+  position: relative;
+  z-index: 1;
+}
+#about_page .block_item .block_content > div ul li:nth-last-child(3) {
+  margin-bottom: 25px;
+}
+#about_page .block_item .block_content > div ul li:has(span):before {
+  top: 10px;
+}
+
+#about_page .about_specs .about_specs__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#about_page .about_specs .about_specs__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #8fd5ba;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#about_page .about_specs .about_specs__heading .label:nth-child(1) {
+  padding: 14px 0 14px 16px;
+}
+#about_page .about_specs .about_specs__heading .label:nth-child(1),
+#about_page .about_specs .about_specs__body .value:nth-child(1) {
+  max-width: 116px;
+  border-right: solid thin #fff;
+}
+
+#about_page .about_specs .about_specs__heading .label:nth-child(2) {
+  padding: 14px 0 14px 24px;
+}
+#about_page .about_specs .about_specs__heading .label:nth-child(2),
+#about_page .about_specs .about_specs__body .value:nth-child(2) {
+  max-width: 226px;
+  border-right: solid thin #fff;
+}
+
+#about_page .about_specs .about_specs__heading .label:nth-child(3) {
+  padding: 14px 0 14px 19px;
+}
+#about_page .about_specs .about_specs__heading .label:nth-child(3) {
+  max-width: 233px;
+  border-right: solid thin #fff;
+}
+#about_page .about_specs .about_specs__body .value:nth-child(1),
+#about_page .about_specs .about_specs__body .value:nth-child(2),
+#about_page .about_specs .about_specs__body .value:nth-child(3) {
+  border-right: solid thin #e3e3e3;
+}
+
+#about_page .about_specs .about_specs__heading .label:nth-child(4) {
+  padding: 14px 0 14px 16px;
+}
+#about_page .about_specs .about_specs__body .value:nth-child(4) {
+  max-width: 227px;
+}
+#about_page .about_specs .about_specs__body .value:nth-child(1),
+#about_page .about_specs .about_specs__body .value:nth-child(2),
+#about_page .about_specs .about_specs__body .value:nth-child(3),
+#about_page .about_specs .about_specs__body .value:nth-child(4) {
+  padding-right: 16px;
+}
+
+#about_page .about_specs .about_specs__heading .label,
+#about_page .about_specs .about_specs__body .value {
+  width: 100%;
+}
+#about_page .about_specs .about_specs__body .value {
+  padding: 23.65px 8px 23px 16px;
+}
+#about_page .about_specs__body .value {
+  padding: 24px 13px;
+  font-size: 14px;
+}
+
+#about_page .about_specs .about_specs__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+}
+#about_page .about_specs__body .value p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+#about_page .about_specs .about_specs__body:nth-child(odd) {
+  background: #f5f5f5;
+}
+#about_page .about_specs .about_specs__body .value:nth-child(1) {
+  letter-spacing: -0.5px;
+}
+#about_page .company_websites {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  #about_page .block_item .block_title:after {
+    max-width: 80px;
+  }
+  #about_page .block_item .block_content > div ul li:nth-last-child(3) {
+    margin-bottom: 21px;
+  }
+  #about_page .block_item .block_content > div ul li span {
+    margin-top: 21px;
+    letter-spacing: 0.5px;
+  }
+  #about_page .block_item .block_content > div ul li:before {
+    top: 10px;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  #about_page .block_item .block_content > div ul li {
+    padding-left: 23px;
+  }
+  #about_page .block_item:last-child .block_content > div:nth-child(2) > span {
+    position: relative;
+    z-index: 1;
+    top: 21px;
+  }
+  #about_page .block_item .block_content > div ul {
+    margin-top: 31px;
+    padding-left: 4px;
+  }
+  #about_page .block_item .block_content > div {
+    gap: 13px;
+  }
+  #about_page {
+    padding-top: 46px;
+  }
+
+  #about_page .block_item .block_content {
+    margin-bottom: 63px;
+  }
+  main:has(#about_page) .breacrumb {
+    display: none;
+  }
+  #about_page .about_overflows {
+    overflow-x: auto;
+    min-width: 100%;
+  }
+
+  #about_page .about_overflows .about_wrapper {
+    min-width: 1429px;
+  }
+  #about_page .about_specs .about_specs__heading .label:nth-child(1),
+  #about_page .about_specs .about_specs__body .value:nth-child(1) {
+    max-width: 116px;
+  }
+
+  #about_page .about_specs .about_specs__heading .label:nth-child(2),
+  #about_page .about_specs .about_specs__body .value:nth-child(2) {
+    max-width: 434px;
+  }
+  #about_page .about_specs .about_specs__heading .label:nth-child(3),
+  #about_page .about_specs .about_specs__body .value:nth-child(3) {
+    max-width: 442px;
+  }
+  #about_page .about_specs .about_specs__heading .label:nth-child(4),
+  #about_page .about_specs .about_specs__body .value:nth-child(4) {
+    max-width: 434px;
+  }
+  #about_page .block_item .block_title {
+    font-size: 25px;
+    padding-bottom: 27px;
+    margin-bottom: 40px;
+  }
+
+  #about_page .block_items {
+    margin-bottom: 64px;
+  }
+
+  #about_page .about_specs .about_specs__title {
+    font-size: 20px;
+    margin-bottom: 29px;
+  }
+  #about_page .about_specs .about_specs__body .value {
+    padding: 25px 8px 24px 16px;
+  }
+}

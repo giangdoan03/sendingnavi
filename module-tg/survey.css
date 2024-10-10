@@ -1,0 +1,729 @@
+@import url("./style.css");
+#survey * {
+    font-family: "Noto Sans JP", "Century Gothic", "Ã£Æ’â€™Ã£Æ’Â©Ã£â€šÂ®Ã£Æ’Å½Ã¨Â§â€™Ã£â€šÂ´ ProN W3", "Hiragino Kaku Gothic ProN",
+        Ã¦Â¸Â¸Ã£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯Ã¤Â½â€œ, YuGothic, "Yu Gothic Medium", Ã¦Â¸Â¸Ã£â€šÂ´Ã£â€šÂ·Ã£Æ’Æ’Ã£â€šÂ¯, "Yu Gothic", Ã£Æ’Â¡Ã£â€šÂ¤Ã£Æ’ÂªÃ£â€šÂª, Meiryo, sans-serif !important;
+}
+#survey {
+    background: #fff;
+}
+#survey .survey-inner .survey-form:has(input[name="privacy01[]"]:checked) .bsm {
+    background:#E73E3E;
+}
+#survey .fl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#survey .container {
+    max-width: 800px;
+    margin: 0 auto;
+    width: calc(100% - 24px);
+}
+#survey ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+#survey img {
+    max-width: 100%;
+}
+#survey .survey-inner {
+    padding: 64px 0 80px 0;
+}
+#survey p,
+#survey h1 {
+    color: #0c2447;
+}
+#survey p,
+#survey li {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0c2447;
+}
+#survey .survey-inner .title-box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 0 0 13px 0;
+}
+#survey .survey-inner .title-box p {
+    margin-top: 59px;
+    margin-bottom: 24px;
+}
+
+#survey .survey-inner .title-box ul li {
+    position: relative;
+}
+#survey .survey-inner .title-box ul {
+    padding-left: 30px;
+}
+
+#survey .survey-inner .title-box ul li:before {
+    content: "※";
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+#survey .gg-recaptcha{
+	margin-bottom: 55px;
+}
+#survey .gg-recaptcha .cf7sr-g-recaptcha {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#survey .gg-recaptcha:has(.wpcf7-not-valid-tip) {
+    padding-top: 15px;
+}
+
+#survey .gg-recaptcha .wpcf7-not-valid-tip {
+    text-align: center;
+}
+#survey .wpcf7-list-item {
+    margin: 0;
+}
+#survey .survey-inner .survey-form {
+    margin-top: 64px;
+}
+#survey .survey-inner .survey-form .form-item {
+    align-items: center;
+    padding: 32px 0;
+    border-top: 1px solid #e3e3e3;
+}
+#survey .survey-inner .survey-form .form-item.at {
+    align-items: flex-start;
+}
+#survey .survey-inner .survey-form .form-item .name {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0c2447;
+    width: 216px;
+    position: relative;
+}
+#survey .survey-inner .survey-form .form-item .name .rq {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 2px;
+    background-color: #f54d4d;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#survey .survey-inner .survey-form .form-item .inputv {
+    width: calc(100% - 216px - 40px);
+    position: relative;
+}
+#survey .survey-inner .survey-form .form-item .inputv input,
+#survey .survey-inner .survey-form .form-item .inputv textarea {
+    border-radius: 4px;
+    border: solid 1px #a2a2a2;
+    background-color: #fff;
+    width: 100%;
+    height: 40px;
+    padding-left: 16px;
+}
+
+#survey .survey-inner .survey-form .form-item .inputv textarea {
+    height: 200px;
+}
+#survey span.wpcf7-not-valid-tip {
+    position: relative;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    color: red;
+    font-size: 13px;
+}
+#survey .survey-inner .survey-form .form-item.privacy span.wpcf7-not-valid-tip {
+    position: absolute;
+    width: 300px;
+    bottom: -40px;
+}
+#survey .survey-inner .survey-form:has(input[name="privacy01[]"]:checked) .bsm {
+    background:#E73E3E;
+}
+#survey .screen-reader-response,
+#survey .wpcf7-response-output {font-size: 13px;padding: 5px 10px;margin: 0;}
+
+#survey .survey-inner .survey-form .form-item.at.radio input {
+    height: unset;
+    width: 20px;
+    margin: 0;
+    position: relative;
+}
+#survey .survey-inner .survey-form .form-item.at.radio input:before {
+    content: "";
+    height: 21px;
+    width: 21px;
+    top: -1px;
+    left: -1px;
+    border-radius: 2px;
+    border: solid 1px #d6d6d6;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+#survey .survey-inner .survey-form .form-item.at.radio input:checked:before {
+    background-image: url("../module-tg/img/check.png");
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+}
+
+#survey .survey-inner .survey-form .wpcf7-list-item label {
+    display: flex;
+    column-gap: 12px;
+}
+#survey .survey-inner .survey-form .wpcf7-list-item label span {
+    display: block;
+    width: fit-content;
+}
+#survey .survey-inner .head {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+#survey .survey-inner .head.head2,
+#survey .survey-inner .head.head3 {
+    margin-top: 24px;
+}
+#survey .survey-inner .survey-form .wpcf7-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+}
+
+#survey .survey-inner .survey-form .checker.mgt {
+    margin-top: 32px;
+}
+
+#survey .survey-inner .survey-form .check-list .check-item {
+    padding-left: 36px;
+    position: relative;
+    cursor: pointer;
+}
+#survey .survey-inner .survey-form .check-list .check-item:before {
+    content: "";
+    height: 21px;
+    width: 21px;
+    top: 0px;
+    left: 0px;
+    border-radius: 2px;
+    border: solid 1px #d6d6d6;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+
+#survey .survey-inner .survey-form .check-list .check-item.clicked:before {
+    background-image: url("../module-tg/img/check.png");
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+}
+
+#survey .survey-inner .survey-form .check-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+}
+#survey .survey-inner .survey-form .inputv .dropdown {
+    position: relative;
+    display: block;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .inputt {
+    border-radius: 4px;
+    border: solid 1px #a2a2a2;
+    background-color: #fff;
+    min-height: 40px;
+    padding: 5px 12px 0px 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    flex-wrap: wrap;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .ard {
+    position: absolute;
+    top: calc(50% + 2px);
+    right: 12px;
+    transform: translateY(-50%);
+}
+#survey .survey-inner .survey-form .inputv .dropdown .ard.up {
+    transform: translateY(-70%) rotateZ(180deg);
+}
+.bg main .bg-bottom-right-half {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .inputt li {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    width: fit-content;
+    padding: 3px 36px 5px 8px;
+    border-radius: 3px;
+    background-color: #eaeaea;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 5px;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .inputt li:after {
+    content: url("../module-tg/img/xxx.png");
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#survey .survey-inner .survey-form .inputv .dropdown .headb {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    margin-bottom: 16px;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: calc(100% + 8px);
+    max-height: 608px;
+    z-index: 4;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar.vip .scroll-bar-inner {
+    padding: 16px 32px;
+    overflow: scroll;
+    height: unset;
+    overflow-x: hidden;
+    max-height: 608px;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar.vip {
+    max-height: 608px;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar.vip .scroll-bar-inner::-webkit-scrollbar {
+    width: 14px;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar.vip .scroll-bar-inner::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar.vip .scroll-bar-inner::-webkit-scrollbar-thumb {
+    background: #777777;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    cursor: pointer;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar.vip .scroll-bar-inner::-webkit-scrollbar-thumb:hover {
+    background: #a4a4a4;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar .scroll-bar-inner {
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    padding: 0;
+    overflow: hidden;
+    height: 0;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar .scroll-item {
+    padding: 16px 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+#survey .survey-inner .survey-form .inputv .dropdown .scroll-bar .scroll-item:last-child {
+    border-bottom: none;
+}
+
+#survey .survey-inner .survey-form .form-item .checker {
+    justify-content: flex-start;
+    column-gap: 16px;
+    align-items: center;
+}
+#survey .survey-inner .survey-form .form-item.privacy .checker p {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0c2447;
+    margin-bottom: 0px;
+}
+#survey .survey-inner .survey-form .form-item.privacy .checker p span a {
+    color: #01bc75;
+    text-decoration: none;
+}
+#survey .survey-inner .survey-form .form-item.privacy .checker {
+    max-width: 490px;
+    margin: 80px auto 38px auto;
+    position: relative;
+}
+#survey .survey-inner .survey-form .form-item.at.radio.privacy {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#survey .survey-inner .survey-form .form-item.at.radio.privacy input:before {
+    top: -2px;
+}
+
+#survey .bsm {
+    width: 160px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+/*     background-color: #d1d1d1; */
+	   background-color: #e73e3e;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+	cursor: pointer;
+	text-align: center;
+}
+
+.mb-only {
+    display: none;
+}
+.pc-only {
+    display: inline-block;
+}
+#survey .survey-inner .survey-form .form-item.privacy .checker span.wpcf7-list-item-label {
+    display: none;
+}
+#survey .survey-inner .survey-form .form-item .checker dl {
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: #0c2447;
+}
+
+#survey .survey-inner .survey-form .inputv .dropdown span.wpcf7-form-control-wrap {
+    /*display:none;*/
+}
+
+/*PAGE CONFIRM*/
+#survey .survey-inner.confirm .survey-form .form-item .inputv {
+    width: calc(100% - 257px);
+    position: relative;
+}
+#survey .survey-inner.confirm .survey-form {
+    margin-top: 59px;
+}
+#survey .survey-inner.confirm .survey-form .form-item .name {
+    width: 257px;
+}
+#survey .survey-inner.confirm .bsm {
+    background: #e73e3e;
+}
+#survey .survey-inner.confirm .survey-form .form-item .inputv p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+#survey .survey-inner.confirm .survey-form .form-item {
+    padding: 24px 0;
+}
+#survey .survey-inner.confirm .survey-form .form-item:first-child {
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 38px;
+}
+#survey .survey-inner.confirm .survey-form .form-item:last-child {
+    border-bottom: none;
+    margin-bottom: 80px;
+}
+
+/*THANKS PAGE*/
+#survey .survey-inner.thanks .title-box p {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+#survey .survey-inner.thanks .bsm {
+    width: 144px;
+    height: 40px;
+    background: #3dce97;
+    text-decoration: none;
+}
+#survey .survey-inner.thanks .bsm:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    #survey .survey-inner .survey-form .inputv .dropdown .ard {
+        display: none;
+    }
+    #survey .survey-inner.confirm picture.line {
+        position: relative;
+        top: -12px;
+    }
+    #survey .survey-inner.confirm .survey-form {
+        margin-top: 27px;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item {
+        border-bottom: 1px solid #e3e3e3;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item {
+        padding: 16px 0;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item .name {
+        width: 100%;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item .inputv {
+        width: 100%;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item.lat .name {
+        border-bottom: none;
+    }
+    #survey .survey-inner.confirm .survey-form .checker.mgt {
+        margin-top: 12px;
+    }
+
+    #survey .survey-inner.confirm .head {
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item.lat .name {
+        padding-bottom: 8px;
+    }
+
+    #survey .survey-inner.confirm .survey-form .form-item.lat {
+        row-gap: 0;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item.lat {
+        padding: 16px 0;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item .inputv p {
+        font-size: 16px;
+        line-height: 1.43;
+    }
+
+    .mb-only {
+        display: inline-block;
+    }
+    .pc-only {
+        display: none;
+    }
+    #survey .survey-inner {
+        padding: 49px 0 80px 0;
+    }
+    #survey .survey-inner .title-box h1 {
+        font-size: 25px;
+        margin: 0 0 27px 0;
+    }
+    #survey p {
+    }
+    #survey .survey-inner .title-box p {
+        margin-top: 22px;
+    }
+    #survey .survey-inner .survey-form {
+        margin-top: 44px;
+    }
+    #survey .survey-inner .survey-form .form-item .name {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    #survey .survey-inner .survey-form .form-item .name .rq {
+        right: 2px;
+        top: 44%;
+        font-size: 12px;
+    }
+    #survey .survey-inner .survey-form .form-item .inputv textarea {
+        height: 300px;
+    }
+    #survey .survey-inner .survey-form .form-item .inputv {
+        width: 100%;
+    }
+    #survey .survey-inner.confirm .survey-form .form-item:first-child {
+        padding-bottom: 17px;
+    }
+    #survey .survey-inner .survey-form .form-item {
+        align-items: center;
+        padding: 10px 0;
+        border-top: none;
+        row-gap: 9px;
+    }
+    #survey .survey-inner .survey-form .form-item.lat {
+        padding: 45px 0 10px 0;
+    }
+    #survey .survey-inner .survey-form .form-item.lat .name {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    #survey .survey-inner .survey-form .wpcf7-checkbox {
+        gap: 16px 32px;
+    }
+    #survey picture.line {
+        position: relative;
+        top: -6px;
+    }
+    #survey .wpcf7-list-item {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+    #survey .survey-inner .head {
+        margin-top: 12px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+    #survey .survey-inner .survey-form .form-item.lat2 {
+        padding: 36px 0 10px 0;
+    }
+    #survey .survey-inner .survey-form .form-item.lat2 .name {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    #survey .survey-inner .survey-form .form-item.privacy .checker p {
+        font-size: 16px;
+        line-height: 1.5;
+        width: calc(100% - 43px);
+    }
+    #survey .survey-inner .survey-form .form-item.privacy .checker {
+        margin: 71px auto 38px auto;
+    }
+    #survey span.wpcf7-not-valid-tip {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        color: red;
+    }
+    #survey .survey-inner .survey-form .form-item.privacy span.wpcf7-not-valid-tip {
+        position: absolute;
+        width: 300px;
+        bottom: -40px;
+    }
+    #survey .survey-inner .survey-form .inputv .dropdown .inputt,
+    #survey .survey-inner .survey-form .inputv .dropdown .headb {
+        display: none;
+    }
+    #survey .survey-inner .survey-form .inputv .dropdown .scroll-bar {
+        position: relative;
+        right: 0;
+        width: 100%;
+        top: 0;
+        max-height: 608px;
+        z-index: 4;
+    }
+    #survey .survey-inner .survey-form .inputv .dropdown .scroll-bar .scroll-bar-inner {
+        border-radius: 4px;
+        box-shadow: unset;
+        background-color: #fff;
+        padding: 0;
+        overflow: hidden;
+        height: unset;
+    }
+    #survey .survey-inner .survey-form .inputv .dropdown .scroll-bar .scroll-item {
+        padding: 0px 0 16px 0;
+        border-bottom: unset;
+    }
+}
+#survey .contact_btns {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+	max-width:500px;
+	margin:auto;
+}
+
+#survey .contact_btns .wpcf7-previous {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #d1d1d1;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    transition: 0.3s all 0s;
+    cursor: pointer;
+	text-align:center;
+}
+
+#survey .contact_btns .wpcf7-previous:hover {
+    background: #0c2447;
+}
+@media(max-width:768px){
+    #survey .contact_btns .wpcf7-previous{
+        position:static;
+    }
+}

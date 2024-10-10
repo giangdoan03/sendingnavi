@@ -1,0 +1,91 @@
+#operating_company .container{
+		max-width: 1000px;
+		margin: 0 auto
+	}
+	#access_map .inner {
+		max-width: 1000px;
+		margin: 0 auto
+	}
+	#operating_company section#operating_company {
+		padding-top: 90px;
+	}
+	#operating_company .page_table_common th, #operating_company .page_table_common td {
+		display: table-cell;
+		padding: 30px 0;
+		background-color: #ffffff;
+	}
+	#operating_company .page_table_common th {
+		width: 14%;
+		text-align: left;
+	}
+	#operating_company .page_table_common th, #operating_company .page_table_common td {
+		border-top: solid 1px #ececec;
+		z-index: -1;
+	}
+	#operating_company .page_table_common tr:last-child th, #operating_company .page_table_common tr:last-child td {
+		border-bottom: solid 1px #ececec;
+	}
+	#operating_company .page_table_common td {
+		width: 86%;
+	}
+	#operating_company .page_table_common * {
+		font-size: 16px;
+	}
+	#operating_company .headline {
+		font-size: 24px;
+		margin-bottom: 30px;
+		padding-top: 50px
+	}
+	#operating_company .page_table_common .ul_list_common>li {
+		margin-top: 10px;
+		line-height: 1.5;
+		list-style-type: disc;
+	}
+	.map_container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+		margin-bottom: 100px;
+	}
+	section#access_map {
+		padding-top: 100px;
+	}
+	#access_map .headline {
+		margin-bottom: 30px;
+		font-size: 24px;
+	}
+	#operating_company table.company_table.page_table_common {
+		width: 100%
+	}
+	#operating_company ul.ul_list_common {
+		margin-left: 18px;
+	}
+	@media print, screen and (max-width: 768px) {
+		#operating_company .page_table_common th, #operating_company .page_table_common td {
+			display: block;
+			width: 100%;
+			padding: 15px 0;
+			border: none;
+			border-top: solid 1px #ececec;
+			z-index: -1;
+		}
+		#operating_company .page_table_common th {
+			background-color: #f5f5f5;
+			text-align: center;
+		}
+		#operating_company .page_table_common * {
+			font-size: 14px;
+		}
+		#operating_company ul.ul_list_common {
+			margin-left: 20px;
+		}
+		.map_container {
+			display: block;
+			overflow: hidden;
+			width: 100%;
+		}
+		.map_container .img_box {
+			padding: 12px;
+		}
+
+	}
